@@ -1,9 +1,9 @@
 
-<code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code> <code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flask/flask.png"></code> <code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"></code>
+<code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code> <code><img height="80" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flask/flask.png"></code> 
 
-# Flask-Rest-Boilerplate
+# Flask-Rest-API
 
-This is an simple non flask blueprint, restful services build on flask framework integrated with mysql database with flask_sqlalchemy.
+This is an simple non flask blueprint, restful services build on flask framework integrated with heroku and github actions
 
 This repository is really better to understand and it is also an begginer friendly.
 
@@ -84,9 +84,31 @@ $ python -m app
 
 ```
 
-Run test
-```bash
-$ pytest test
+### ➡️ Step 3
+Checkout API
+https://vaultedgeapi.herokuapp.com
+
+######pdf route
+It contain __two__ query parameter and __one__ body section where you can send your pdf file in binary format
+
+**Query Parameter**
+*angle_of_rotation* [90, 180, 270]
+*page_number* [1..n]
+
+```json
+/pdf?angle_of_rotation=180&page_number=18
+
 ```
 
-If you like 😃 this project please give a star.
+**Body Section**
+make sure to send pdf in body in binary format
+
+
+
+**Compleate Link**
+```json
+https://vaultedgeapi.herokuapp.com/pdf?angle_of_rotation=180&page_number=18
+```
+
+###### Sample Image
+
