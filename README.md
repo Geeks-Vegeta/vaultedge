@@ -88,27 +88,32 @@ $ python -m app
 Checkout API
 https://vaultedgeapi.herokuapp.com
 
-######pdf route
+###### pdf route
 It contain __two__ query parameter and __one__ body section where you can send your pdf file in binary format
 
 **Query Parameter**
+<br/>
 *angle_of_rotation* [90, 180, 270]
+<br/>
 *page_number* [1..n]
 
-```json
+```bash
 /pdf?angle_of_rotation=180&page_number=18
 
 ```
 
 **Body Section**
+<br/>
 make sure to send pdf in body in binary format
 
 
 
 **Compleate Link**
-```json
+<br/>
+```bash
 https://vaultedgeapi.herokuapp.com/pdf?angle_of_rotation=180&page_number=18
 ```
 
 ###### Sample Image
+![image](https://user-images.githubusercontent.com/89457811/200666035-2925e40a-bd92-452d-b279-e37c919e7f3b.png)
 
