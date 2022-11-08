@@ -118,5 +118,5 @@ https://vaultedgeapi.herokuapp.com/pdf?angle_of_rotation=180&page_number=18
 ![image](https://user-images.githubusercontent.com/89457811/200666035-2925e40a-bd92-452d-b279-e37c919e7f3b.png)
 
 <br/>
-Here I have used **thunderClient** (vs code extention for testing api's). <br/>
-You can use **postman** where while making post request please make sure to click send and download
+Here I have used <strong>thunderClient</strong> (vs code extention for testing api's). <br/>
+You can use <strong>postman</strong> where while making post request please make sure to click send and download
