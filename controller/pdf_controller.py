@@ -53,9 +53,10 @@ def pdf(file, angle_of_rotation, page_number):
     
 
         return send_file(return_data,as_attachment=True,mimetype='application/pdf',
-                     attachment_filename='download_pdf.pdf')
+                    download_name='download_pdf.pdf')
  
     except Exception as e:
+      print(e)
       return {"message":"Only pdf file are allowed"},400
     
 
