@@ -39,21 +39,22 @@ def pdf(file, angle_of_rotation, page_number):
         
 
         # This base64 online link file for streaming download
-        # with open(file_name, 'rb') as fo:
-        #     return_data.write(b"data:application/pdf;base64,")
-        #     return_data.write(base64.b64encode(fo.read()))
-        #     return_data.seek(0)  
-        # os.remove(file_name)
-
-
         with open(file_name, 'rb') as fo:
-            return_data.write(fo.read())
+            return_data.write(b"data:application/pdf;base64,")
+            return_data.write(base64.b64encode(fo.read()))
             return_data.seek(0)  
         os.remove(file_name)
+
+        return send_file(return_data,mimetype='application/pdf')
+
+        # with open(file_name, 'rb') as fo:
+        #     return_data.write(fo.read())
+        #     return_data.seek(0)  
+        # os.remove(file_name)
     
 
-        return send_file(return_data,as_attachment=True,mimetype='application/pdf',
-                    download_name='download_pdf.pdf')
+        # return send_file(return_data,as_attachment=True,mimetype='application/pdf',
+        #             download_name='download_pdf.pdf')
  
     except Exception as e:
       print(e)
