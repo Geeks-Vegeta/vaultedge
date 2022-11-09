@@ -96,9 +96,12 @@ It contain __two__ query parameter and __one__ body section where you can send y
 *angle_of_rotation* [90, 180, 270]
 <br/>
 *page_number* [1..n]
+<br/>
+*isbase* [True/False]
+if isbase is set to False then it will return download file, if its not False then it will return base64 pdf url.
 
 ```bash
-/pdf?angle_of_rotation=180&page_number=18
+/pdf?isbase=False&angle_of_rotation=180&page_number=18
 
 ```
 
@@ -111,7 +114,7 @@ make sure to send pdf in body in binary format
 **Compleate Link**
 <br/>
 ```bash
-https://vaultedgeapi.herokuapp.com/pdf?angle_of_rotation=180&page_number=18
+https://vaultedgeapi.herokuapp.com/pdf?isbase=True&angle_of_rotation=180&page_number=18
 ```
 
 ###### Sample Image

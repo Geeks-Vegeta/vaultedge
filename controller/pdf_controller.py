@@ -62,7 +62,6 @@ def pdfbsf(file, angle_of_rotation, page_number):
         pdf_page_numbers = len(pdf_reader.pages)
         page_number = int(page_number)
         angle_of_rotation = int(angle_of_rotation)
-        file_name = f"abx.pdf"
 
 
         if angle_of_rotation not in [90,180,270]:
