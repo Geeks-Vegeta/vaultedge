@@ -98,6 +98,7 @@ It contain __two__ query parameter and __one__ body section where you can send y
 *page_number* [1..n]
 <br/>
 *isbase* [True/False]
+<br/>
 if isbase is set to False then it will return download file, if its not False then it will return base64 pdf url.
 
 ```bash
